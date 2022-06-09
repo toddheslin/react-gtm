@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import sinon from 'sinon'
 import warn from '../utils/warn'
 

@@ -34,6 +34,6 @@ const Snippets = {
       window.${dataLayerName} = window.${dataLayerName} || [];
       window.${dataLayerName}.push(${JSON.stringify(dataLayer)})`
   }
-}  
+}
 
 module.exports = Snippets

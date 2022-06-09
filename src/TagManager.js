@@ -32,9 +32,10 @@ const TagManager = {
       dataScript
     }
   },
-  initialize: function ({ gtmId, events = {}, dataLayer, dataLayerName = 'dataLayer', auth = '', preview = '', nonce = undefined }) {
+  initialize: function ({ gtmId, gtmSrc = 'https://www.googletagmanager.com', events = {}, dataLayer, dataLayerName = 'dataLayer', auth = '', preview = '', nonce = undefined }) {
     const gtm = this.gtm({
       id: gtmId,
+      src: gtmSrc,
       events: events,
       dataLayer: dataLayer || undefined,
       dataLayerName: dataLayerName,
